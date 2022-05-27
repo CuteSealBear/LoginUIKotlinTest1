@@ -23,9 +23,12 @@ class MainActivity : AppCompatActivity() {
 
             if (inputId == "admin@test.com" && inputPw == "qwer") {
 
+//                관리자 이름을 변수에 임시 저장.
+                val name = "물곰이"
+
 //                둘다 맞다면 => 관리자입니다. 토스트
 
-                Toast.makeText(this, "관리자입니다.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "${name} 관리자입니다.", Toast.LENGTH_SHORT).show()
 
             }
             else {
